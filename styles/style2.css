@@ -1,0 +1,96 @@
+/* .c_image{
+    width: 50px;
+    height: 50px;
+} */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+
+.container .blogs-content .blogs .blog {
+    justify-content: center;
+}
+
+/* .container .blogs-content .blogs .blog img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+} */
+.container .blogs-content .blogs .blog .blog-text {
+
+    height: 180px;
+}
+
+.intern_head {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.internship {
+    max-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info_s {
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    max-height: fit-content;
+}
+
+.info_s_img img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+    .internship {
+        grid-template-columns: 1fr;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+
+}
+
+.column {
+    flex: 33.3%;
+    max-width: 32%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    /* filter: grayscale(100%); */
+    
+}
+
+.column img:hover {
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(0);
+    transform: scale(1.08);
+    margin: 1rem;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
